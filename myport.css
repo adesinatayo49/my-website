@@ -1,175 +1,59 @@
-/* Reset CSS by Amaka Ndukwu */
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my portfoilio</title>
+        <link rel="stylesheet" href="myport.css"> 
+    </head>
+    <body>
+        <header>
+            
+         <nav class="hero">
+         <div id="about">about me</div>
+         <div id="contact">contact me</div>
+         <div id="projects">my project</div>
+         <div id="skills">my skills</div>
+         </nav>
+        </header>
+        <section>
+            <div class="beginning">
+             <img src ="image15.jpeg" alt="My Image" class="my-image">
+        
+            <h1 class = "legend">oluwatayo adesina <br>software engineer/developer</h1>
+            </div>
+        </section>
+        <h1 class="mimi" a href="#about">ABOUT ME</h1>
+    <P class="yum">
+    I’m Tayo, a passionate software developer focused on building modern, reliable, and user-friendly digital solutions.
 
-/* making use of :where to allow for low specificity making it easy to override */
+I’m developing my expertise across both frontend and backend development, with an interest in creating complete applications—from clean, responsive user interfaces to the server-side logic, databases, and APIs that power them.
 
+I enjoy solving problems through technology, learning new tools, and turning ideas into functional products. I’m continuously improving my skills through hands-on projects and practical development.
 
-/* 1. border-box for box model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+My goal is to become a well-rounded full-stack software developer capable of designing, developing, and maintaining scalable applications that solve real-world problems.
 
-/* 2. remove default margin 
-padding is optional but i do this because of lists*/
+Building with purpose. Learning continuously. Growing through every project.
+    </P>
+    <h2 class="mum" a href="#skills">my skills</h2>
+    <ul class="skills">
+        <li >HTML</li>
+        <li >CSS</li>
+        <li >JavaScript</li>
+        
+    </ul>
+    <h3 class="project">my project</h3>
+    <p class="task">project coming up soon.......</p>
 
-:where(:not(dialog)) {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* 3. great for in-page linking */
-@media(prefers-reduced-motion:no-preference) {
-    :where(html) {
-        scroll-behavior: smooth;
-    }
-}
-
-/* 4. line height and text rendering improvement */
-:where(html) {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* 5. ensure full viewport height */
-:where(html, body) {
-    min-block-size: 100%;
-}
-
-/* 6. improve line wrapping */
-:where(h1, h2, h3,
-    h4, h5, h6) {
-    text-wrap: balance;
-}
-
-:where(p) {
-    text-wrap: pretty;
-}
-
-:where(figure)>:where(figcaption) {
-    text-wrap: balance;
-}
-
-:where(p, h1, h2, h3,
-    h4, h5, h6) {
-    overflow-wrap: break-word;
-}
-
-
-
-/* 7. making media elements block-level */
-:where(img,
-    svg,
-    video,
-    canvas,
-    picture,
-    audio,
-    iframe,
-    embed,
-    object) {
-    display: block
-}
-
-:where(img, svg, video, canvas, picture) {
-    block-size: auto;
-    max-inline-size: 100%
-}
-
-/* 8. inherit font and letter spacing for form controls */
-:where(input,
-    button,
-    textarea,
-    select),
-:where(input[type=file])::-webkit-file-upload-button {
-    font: inherit;
-    letter-spacing: inherit
-}
-
-/* 9. textarea can only resized vertically and will grow to adjust its content */
-:where(textarea) {
-    resize: vertical;
-   field-sizing: content;
-}
-
-/* 10. table */
-:where(table) {
-    width: fit-content;
-    border-collapse: collapse;
-}
-
-:where(pre) {
-    direction: ltr;
-    max-inline-size: max-content;
-    min-inline-size: 0;
-    white-space: pre;
-    writing-mode: lr
-}
-
-:where(a[href],
-    area,
-    button,
-    input:not([type=text],
-        [type=email],
-        [type=number],
-        [type=password],
-        [type=""],
-        [type=tel],
-        [type=url]),
-    label[for],
-    select,
-    summary,
-    [tabindex]:not([tabindex*="-"],
-        pre)) {
-    cursor: pointer
-}
-
-/*  this will disable additional non-standard gestures such as double-tap to zoom*/
-:where(a[href],
-    area,
-    button,
-    input,
-    label[for],
-    select,
-    summary,
-    textarea,
-    [tabindex]:not([tabindex*="-"])) {
-    touch-action: manipulation
-}
-
-
-/*my own css*/
-
-body{
-    background-color: black;
-}
-
-    .hero{
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-    text-transform: uppercase;
-    padding: 20px;
-     
-       
-}
-.hero a{
-    text-decoration: none;
-    font-weight: bold;
-    color: blueviolet;
-}
-.legend{
-    color: blueviolet;
-    padding-top: 20px;
-    text-transform: uppercase;
-    display: flex;
-    text-align: center;
-    padding-left: 80px;
-    justify-content: center;
-}
-.mimi{
-    color: white;
-    font-weight: bold;
-    padding-top: 30px;
-    text-align: center;
-}
+    
+        <h3 class="contact">contact me</h3>
+        <ul class="links">
+        <li><a href="https://www.linkedin.com/in/oluwatayo-adesina-587aa5276?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">linkedin</a></li>
+        <li><a href="mailto:adesinatayo49@gmail.com" target="_blank">email</a></li>
+        <li><a href="https://wa.me/+2347051456984" target="_blank">whatsapp</a></li>
+        </ul>
+        <footer>
+        <p class="footer">&copy; 2026 My Portfolio. All rights reserved.</p>
+            </footer>
+    </body>
+</html>
